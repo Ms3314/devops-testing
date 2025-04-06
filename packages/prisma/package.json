@@ -1,0 +1,30 @@
+{
+  "name": "@repo/dib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./client": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "generate": "prisma generate"
+  },
+  "prisma": {
+    "schema": "./prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "6.5.0",
+    "prisma": "6.5.0"
+  },
+  "license": "ISC",
+  "description": "",
+  "keywords": [],
+  "author": ""
+}
+
