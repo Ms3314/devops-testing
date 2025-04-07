@@ -1,14 +1,11 @@
-import { client } from "@repo/db/client";
+import React from 'react';
 
-export default async function Home() {
-  const user = await client.user.findFirst();
-
+export default function Home() {
   return (
-    <div>
-      First name haha: 
-      {user?.username}
-      password: 
-      {user?.password}
-    </div>
+    <React.Fragment>
+      <div>
+        Hello everyone, I hope you are fine
+      </div>
+    </React.Fragment>
   );
 }

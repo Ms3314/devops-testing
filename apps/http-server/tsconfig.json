@@ -3,15 +3,9 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "baseUrl": ".", 
-    "paths": {
-      "@repo/db": ["../../packages/prisma/index.ts"],
-      "@repo/db/*": ["../../packages/prisma/*"]
-    }
+    "baseUrl": "."
   },
   "include": ["src/**/*"],
-  "references": [
-    { "path": "../../packages/prisma" }
-  ]
+
 }
 
